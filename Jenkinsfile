@@ -10,9 +10,15 @@ pipeline {
 		''' 
             }
         }
-        stage('Test') { 
-            steps {
-                // 
-            }
+
+
+
+
+
+    }
+    post {
+        always {
+            echo 'This will always run'
         }
     }
+}
